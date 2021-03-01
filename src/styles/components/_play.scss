@@ -1,0 +1,100 @@
+.questions {
+   background: $off-white;
+   border-left: 5px solid $blue;
+   width: 80%;
+   margin: $lg auto 0 auto;
+   padding: $sm $md;
+
+   h2 {
+      text-align: center;
+      font-weight: lighter;
+   }
+
+   .lifeline-container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .lifeline {
+      position: relative;
+      top: -3px;
+   }
+
+   h5 {
+      font-size: 1.2rem;
+      margin-bottom: $lg;
+      line-height: 1.5;
+      text-align: center;
+   }
+
+   .options-container {
+      display: inline-block;
+      width: 50%;
+   }
+
+   .option {
+      background: $blue;
+      border-radius: $button-radius;
+      color: $white;
+      cursor: pointer;
+      margin: $md auto;
+      padding: $normal;
+      transition: 0.3s linear all;
+      text-align: center;
+      width: 90%;
+   }
+
+   .option:hover {
+      background: darken($blue,20%);
+   }
+}
+
+.button-container {
+   display: flex;
+   justify-content: flex-start;
+   margin: 0 auto $sm auto;
+   padding: $md;
+   width: 80%;
+}
+
+.button-container button {
+   border: none;
+   color: $off-white;
+   cursor: pointer;
+   font-family: $quicksand;
+   margin-right: $md;
+   padding: $xs $sm;
+}
+
+// Previous Button
+.button-container button:first-child {
+   background: darken($blue, 10%);
+   box-shadow: $shadow;
+   transition: 0.3s linear all
+}
+
+.button-container button:first-child:hover {
+   background: darken($blue, 20%);
+}
+
+// Next Button
+.button-container button:nth-child(2) {
+   background: darken($green, 10%);
+   box-shadow: $shadow;
+   transition: 0.3s linear all
+}
+
+.button-container button:nth-child(2):hover {
+   background: darken($green, 20%);
+}
+
+// Quit Button
+.button-container button:last-child {
+   background: darken($red, 10%);
+   box-shadow: $shadow;
+   transition: 0.3s linear all
+}
+
+.button-container button:last-child:hover {
+   background: darken($red, 20%);
+}

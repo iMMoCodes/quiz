@@ -42,7 +42,7 @@ const QuizInstructions = () => (
       </ul>
       <div>
          <span className="left"><Link to="/">Take me back</Link></span>
-         <span className="right"><Link to="/play">Start game</Link></span>
+         <span className="right"><Link to="/play/quiz">Start game</Link></span>
       </div>
    </div>
    </>
